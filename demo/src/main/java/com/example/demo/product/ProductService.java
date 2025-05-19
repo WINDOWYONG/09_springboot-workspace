@@ -10,13 +10,13 @@ public class ProductService {
     private ProductRepository productRepository;
 
     // 구단 조회 메소드
-    public String findProduct() {
-        return productRepository.findProduct();
+    public Product findProduct(int id) {
+        return productRepository.findProduct(id);
     }
 
     // 구단 등록
-    public void save() {
-        productRepository.save();
+    public void save(Product product) {
+        productRepository.save(product);
     }
 
 }
